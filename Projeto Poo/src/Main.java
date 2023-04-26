@@ -15,7 +15,9 @@ public class Main {
         Ganhos gan = new Ganhos();
         DataGanho dataGanho = new DataGanho();
         DataGasto dataGasto = new DataGasto();
-
+        RelatorioGastos relGastos = new RelatorioGastos();
+        RelatorioGanhos relGanhos = new RelatorioGanhos();
+        Total total = new Total();
 
         String pagamento = "";
 
@@ -51,12 +53,6 @@ public class Main {
                 System.out.println("Insira o tipo do gasto:");
                 String tipoGasto = scan.nextLine();
                 gas.setTipoGasto(tipoGasto, count_gasto);
-
-
-//                System.out.println("Insira a data do gasto: EX - 20/04/2023");
-//                String dataGasto = scan.nextLine();
-//                gas.setDataGasto(dataGasto, count_gasto);
-
 
 
                 System.out.println("Insira o dia: EX - 20");
@@ -107,10 +103,6 @@ public class Main {
                 gan.setTipoGanho(tipoGanho, count_ganho);
 
 
-//                System.out.println("Insira a data do ganho: EX - 20/04/2023");
-//                String dataGanho = scan.nextLine();
-//                gan.setDataGanho(dataGanho, count_ganho);
-
                 System.out.println("Insira o dia: EX - 20");
                 int dia = scan.nextInt();
                 System.out.println("Insira o mês: EX - 04");
@@ -138,26 +130,27 @@ public class Main {
 
                 ++count_ganho;
             } else {
-                int mes;
+                int i;
                 if (resposta == 3) {
                     System.out.printf("%30s%15s%15s%15s%25s \n", "Gastos", "Tipo", "Data", "Valor", "Forma de Pagamento");
 
-                    for (mes = 0; mes < count_gasto; ++mes) {
-                        if (gas.getPagamentoGasto(mes) == 1) {
+                    for (i = 0; i < count_gasto; ++i) {
+                        if (gas.getPagamentoGasto(i) == 1) {
                             pagamento = "PIX";
-                        } else if (gas.getPagamentoGasto(mes) == 2) {
+                        } else if (gas.getPagamentoGasto(i) == 2) {
                             pagamento = "Boleto";
-                        } else if (gas.getPagamentoGasto(mes) == 3) {
+                        } else if (gas.getPagamentoGasto(i) == 3) {
                             pagamento = "Crédito";
                         }
-
-                        System.out.printf("%30s%15s%15s%15.2f%25s \n", gas.getNomeGasto(mes), gas.getTipoGasto(mes), dataGasto.getFormData(mes), gas.getValorGasto(mes), pagamento);
+                        relGastos.setRelatorio(gas.getNomeGasto(i), gas.getTipoGasto(i), dataGasto.getFormData(i), gas.getValorGasto(i), pagamento, i);
+                        relGastos.getRelatorio(i);
                     }
                 } else if (resposta == 4) {
                     System.out.printf("%30s%15s%15s%15s \n", "Ganhos", "Tipo", "Data", "Valor");
 
-                    for (mes = 0; mes < count_ganho; ++mes) {
-                        System.out.printf("%30s%15s%15s%15.2f \n", gan.getNomeGanho(mes), gan.getTipoGanho(mes), dataGanho.getFormData(mes), gan.getValorGanho(mes));
+                    for (i = 0; i < count_ganho; ++i) {
+                        relGanhos.setRelatorio(gas.getNomeGasto(i), gas.getTipoGasto(i), dataGasto.getFormData(i), gas.getValorGasto(i), i);
+                        relGanhos.getRelatorio(i);
                     }
                 } else if (resposta == 5) {
                     System.out.println("\n\n\n\nEscolha qual o mês referente ao relatório: " +
@@ -181,7 +174,7 @@ public class Main {
                     int ano = scan.nextInt();
 
                     System.out.printf("%30s%15s%15s%15s%25s \n", "Gastos", "Tipo", "Data", "Valor", "Forma de Pagamento");
-                    for (int i = 0; i < count_gasto; ++i) {
+                    for (i = 0; i < count_gasto; ++i) {
                         if (dataGasto.getFormData(i).contains("/" + mensal + "/" + ano)) {
                             if (gas.getPagamentoGasto(i) == 1) {
                                 pagamento = "PIX";
@@ -191,7 +184,10 @@ public class Main {
                                 pagamento = "Crédito";
                             }
 
-                            System.out.printf("%30s%15s%15s%15.2f%25s \n", gas.getNomeGasto(i), gas.getTipoGasto(i), dataGasto.getFormData(i), gas.getValorGasto(i), pagamento);
+                            relGastos.setRelatorio(gas.getNomeGasto(i), gas.getTipoGasto(i), dataGasto.getFormData(i), gas.getValorGasto(i), pagamento, i);
+                            relGastos.getRelatorio(i);
+                            total.setGastos(gas.getValorGasto(i));
+
                         } else {
                             System.out.printf("\n%100s", "Não existe registro de Gastos nesse mês!");
                         }
@@ -201,13 +197,18 @@ public class Main {
                     System.out.println("");
                     System.out.printf("%30s%15s%15s%15s \n", "Ganhos", "Tipo", "Data", "Valor");
 
-                    for (int i = 0; i < count_ganho; ++i) {
+                    for (i = 0; i < count_ganho; ++i) {
                         if (dataGanho.getFormData(i).contains("/" + mensal + "/" + ano)) {
-                            System.out.printf("%30s%15s%15s%15.2f  \n", gan.getNomeGanho(i), gan.getTipoGanho(i), dataGanho.getFormData(i), gan.getValorGanho(i));
+                            relGanhos.setRelatorio(gas.getNomeGasto(i), gas.getTipoGasto(i), dataGasto.getFormData(i), gas.getValorGasto(i), i);
+                            relGanhos.getRelatorio(i);
+                            total.setGanhos(gan.getValorGanho(i));
+
                         } else {
                             System.out.printf("\n%100s", "Não existe registro de Ganhos nesse mês!");
                         }
                     }
+                    total.setTotalgg();
+                    total.getTotalgg();
                 }
             }
         }
