@@ -17,7 +17,7 @@ public class Total {
     }
     public PrintStream getTotalgg(){
         return (
-                System.out.printf("\n\n\n\n%30s:%15.2f\n%30s:%15.2f\n%30s:%15.2f", "Total Gastos", this.gastos, "Total Ganhos", this.ganhos, "Total", this.totalgg)
+                System.out.printf("\n\n\n\n%30s:%15.2f-\n%30s:%15.2f+\n%30s:%15.2f", "Total Gastos", this.gastos, "Total Ganhos", this.ganhos, "Total", this.totalgg)
 
                 );
     }

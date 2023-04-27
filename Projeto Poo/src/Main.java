@@ -149,7 +149,7 @@ public class Main {
                     System.out.printf("%30s%15s%15s%15s \n", "Ganhos", "Tipo", "Data", "Valor");
 
                     for (i = 0; i < count_ganho; ++i) {
-                        relGanhos.setRelatorio(gas.getNomeGasto(i), gas.getTipoGasto(i), dataGasto.getFormData(i), gas.getValorGasto(i), i);
+                        relGanhos.setRelatorio(gan.getNomeGanho(i), gan.getTipoGanho(i), dataGanho.getFormData(i), gan.getValorGanho(i), i);
                         relGanhos.getRelatorio(i);
                     }
                 } else if (resposta == 5) {
@@ -199,7 +199,7 @@ public class Main {
 
                     for (i = 0; i < count_ganho; ++i) {
                         if (dataGanho.getFormData(i).contains("/" + mensal + "/" + ano)) {
-                            relGanhos.setRelatorio(gas.getNomeGasto(i), gas.getTipoGasto(i), dataGasto.getFormData(i), gas.getValorGasto(i), i);
+                            relGanhos.setRelatorio(gan.getNomeGanho(i), gan.getTipoGanho(i), dataGasto.getFormData(i), gan.getValorGanho(i), i);
                             relGanhos.getRelatorio(i);
                             total.setGanhos(gan.getValorGanho(i));
 
