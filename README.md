@@ -1,7 +1,7 @@
 <div>
   <h1> Projeto Relatório de Ganhos e Gastos</h1>
   <p>Projeto com intuito avaliativo para aula da matéria de <strong>Programação Orientada a Objetos (POO)</strong></p>
-  <p>O projeto em questão tem como principais funções o registro de Gastos e Ganhos com base em dia, mês e ano. A geração de relatorios também é possível atraves das classes apropriadas, gerando os resumos financeiros dos Gastos e Ganhos em geral, cadastrados pelo usuário</p>
+  <p>O projeto em questão tem como principais funções o registro de Gastos e Ganhos com base em dia, mês e ano. A geração de relatorios também é possível através das classes apropriadas, gerando os resumos financeiros dos Gastos e Ganhos em geral, cadastrados pelo usuário</p>
   
   <h2>Etapas do Processo</h2>
   <ul>
