@@ -10,24 +10,24 @@
      <br>
     <li>Adicione os Gastos.</li><br>
     <div>
-      <img src="https://user-images.githubusercontent.com/105741181/235929246-4573510f-f340-406f-914a-8b5f95e6cae7.png">
-      <img src="https://user-images.githubusercontent.com/105741181/235929766-ba51a765-295d-4324-a4c0-ac72c9bbe2c0.png">
+      <img width=340 height=460 src="https://user-images.githubusercontent.com/105741181/235929246-4573510f-f340-406f-914a-8b5f95e6cae7.png">
+      <img width=340 height=460 src="https://user-images.githubusercontent.com/105741181/235929766-ba51a765-295d-4324-a4c0-ac72c9bbe2c0.png">
       <br>
-      <img src="https://user-images.githubusercontent.com/105741181/235930002-33ed68b3-ffc4-446e-b7de-73441fa9eb1f.png">
-      <img src="https://user-images.githubusercontent.com/105741181/235930035-6bc2c7cf-1ed4-4627-84a3-128915871b17.png">
+      <img width=340 height=460 src="https://user-images.githubusercontent.com/105741181/235930002-33ed68b3-ffc4-446e-b7de-73441fa9eb1f.png">
+      <img width=340 height=460 src="https://user-images.githubusercontent.com/105741181/235930035-6bc2c7cf-1ed4-4627-84a3-128915871b17.png">
       <br>
-      <img src="https://user-images.githubusercontent.com/105741181/235930069-ca19cb5e-a39b-4aa2-9c77-396c0f2afbab.png">
+      <img width=340 height=460 src="https://user-images.githubusercontent.com/105741181/235930069-ca19cb5e-a39b-4aa2-9c77-396c0f2afbab.png">
     </div>
       <br>
       <br>
     <li>Adicione os Ganhos.</li>
       <br>
     <div>
-      <img src="https://user-images.githubusercontent.com/105741181/235932471-3d8fc498-8ac3-40eb-ba99-d7e720667850.png">
-      <img src="https://user-images.githubusercontent.com/105741181/235932486-bfdad773-8d85-47b1-9ecc-6d6350d1cd54.png">
+      <img width=255 height=365 src="https://user-images.githubusercontent.com/105741181/235932471-3d8fc498-8ac3-40eb-ba99-d7e720667850.png">
+      <img width=255 height=365 src="https://user-images.githubusercontent.com/105741181/235932486-bfdad773-8d85-47b1-9ecc-6d6350d1cd54.png">
       <br>
-      <img src="https://user-images.githubusercontent.com/105741181/235932499-b3af1d35-b0eb-4086-947a-fc4d4b580315.png">
-      <img src="https://user-images.githubusercontent.com/105741181/235932519-78f5cd66-d5af-4b37-a374-2360f837300b.png">
+      <img width=255 height=365 src="https://user-images.githubusercontent.com/105741181/235932499-b3af1d35-b0eb-4086-947a-fc4d4b580315.png">
+      <img width=255 height=365 src="https://user-images.githubusercontent.com/105741181/235932519-78f5cd66-d5af-4b37-a374-2360f837300b.png">
       <br>
     </div>
       <br>
@@ -65,5 +65,12 @@
     <div>
       <img src="https://user-images.githubusercontent.com/105741181/235933198-fe5a4c52-6da6-4eab-ac95-6c612c5b70c3.png">
     </div>
+      <br>
+      <br>
   </ul>
+  <h2>Diagrama de Classes UML</h2>
+  <br>
+  <div>
+    <img src="https://user-images.githubusercontent.com/105741181/235934888-f3036938-5456-4873-81a1-7eedef0e3330.png">
+  </div>
 </div>
