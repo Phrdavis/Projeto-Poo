@@ -1,7 +1,7 @@
 <div>
-  <h1> Projeto Poo </h1>
-  <p>Projeto com intuito avaliativo para aula da matéria de Programação Orientada a Objetos (POO)</p>
-  <p>O projeto em questão tem como principais funções a anotação de Gastos e Ganhos com base em dia, mês e ano. A geração de relatorios também é possivel atraves das classes apropriadas, gerando os resumos financeiros dos Gastos e Ganhos em geral, cadastrados pelo usuário</p>
+  <h1> Projeto Relatório de Ganhos e Gastos</h1>
+  <p>Projeto com intuito avaliativo para aula da matéria de <strong>Programação Orientada a Objetos (POO)</strong></p>
+  <p>O projeto em questão tem como principais funções o registro de Gastos e Ganhos com base em dia, mês e ano. A geração de relatorios também é possível atraves das classes apropriadas, gerando os resumos financeiros dos Gastos e Ganhos em geral, cadastrados pelo usuário</p>
   
   <h2>Etapas do Processo</h2>
   <ul>
@@ -73,4 +73,9 @@
   <div>
     <img src="https://user-images.githubusercontent.com/105741181/235934888-f3036938-5456-4873-81a1-7eedef0e3330.png">
   </div>
+  <h2>Informações</h2>
+    <p><strong>Instituição</strong>: Universidade da Região de Joinville, Univille - Bom Retiro, Joinville - SC, Brasil</p>
+    <p><strong>Matéria</strong>: Programação Orientada a Objetos</p>
+    <p><strong>Ministrada pelo professor</strong>: Leanderson André</p>
+  <br>
 </div>
